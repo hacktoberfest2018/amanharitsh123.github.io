@@ -6,40 +6,39 @@ body,html
 }
 body
 {  color:white;
-   background-image:url("bgpic.jpeg");
+   background-image:url("bgpic1.jpg");
    height:100%;
    background-position: center;
    background-repeat: no-repeat;
    background-size:cover;
 }
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.bg
+{}
+.bg .jumbotron
+{ display: none;
+}
+.bg .btn-circle {
+  background-color: #FFFF00;
+  margin-top: 170px;
+  opacity: 0.5;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 50px;
+  font-size: 70px;
+  line-height: 1.42;
+  border-radius: 150px;
+   font-family:'Lobster',cursive;
+   color :#FF0000;
+}
 
 .jumbotron {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  background: transparent;
   font-family:'Lobster',cursive;
   height: 350px;
   color: white;
   text-shadow: #444 0 1px 1px;
-  background:transparent;
-  size: 250px;
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  
 }
 #hd
 { font-size: 100px;
@@ -49,12 +48,3 @@ body
 #lead
 { font-size: 70px;
 }
-* {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-    }

@@ -4,8 +4,8 @@ body,html
   margin:0;
 
 }
-.bg
-{
+body
+{  color:white;
    background-image:url("bgpic.jpeg");
    height:100%;
    background-position: center;
